@@ -1,0 +1,767 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html charset=utf-8"/>
+<title>Veterans Connect Virtual Fair - Nov 1st - 15th: Search Results</title>
+<link rel="StyleSheet" type="text/css" href="http://www.careerlistonline.com/templates/_system/main/images/css/form.css" />
+<link rel="StyleSheet" type="text/css" href="http://www.careerlistonline.com/templates/OfficeView/main/images/design.css" />
+<link rel="alternate" type="application/rss+xml" title="RSS2.0" href="http://www.careerlistonline.com/rss/" />
+<link rel="stylesheet" href="http://www.careerlistonline.com/system/lib/rating/style.css" type="text/css" />
+<link rel="StyleSheet" type="text/css" href="http://www.careerlistonline.com/system/ext/jquery/css/jquery-ui.css"  />
+<link rel="StyleSheet" type="text/css" href="http://www.careerlistonline.com/system/ext/jquery/css/jquery.autocomplete.css" />
+<script language="JavaScript" type="text/javascript" src="http://www.careerlistonline.com/system/ext/jquery/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://www.careerlistonline.com/system/ext/jquery/jquery-ui.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://www.careerlistonline.com/system/ext/jquery/jquery.form.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://www.careerlistonline.com/system/ext/jquery/jquery.validate.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://www.careerlistonline.com/system/ext/jquery/jquery.autocomplete.pack.js"></script>
+<style type="text/css">
+*html img, *html.png {
+ azimuth: expression(  this.pngSet?  this.pngSet=true : 
+ (this.nodeName == "IMG" ?  (this.src.toLowerCase().indexOf('.png')>-1 ?  (this.runtimeStyle.backgroundImage = "none", this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",  this.src = "http://www.careerlistonline.com/templates/OfficeView/main/images/blank.gif") :
+ '') :          
+ (this.currentStyle.backgroundImage.toLowerCase().indexOf('.png')>-1) ?  (this.origBg = (this.origBg) ?  this.origBg :             
+ this.currentStyle.backgroundImage.toString().replace('url("', '').replace('")', ''),  this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",  this.runtimeStyle.backgroundImage = "none") :
+ ''  ), this.pngSet=true  );
+}
+</style>
+<script language="javascript" type="text/javascript">
+$.ui.dialog.prototype.options.bgiframe = true;
+
+function popUpWindow(url, widthWin, heightWin, title, parentReload, userLoggedIn){
+	reloadPage = false;
+	$("#messageBox").dialog( 'destroy' ).html('<img style="vertical-align: middle;" src="http://www.careerlistonline.com/system/ext/jquery/progbar.gif" alt="Please, wait ..." /> Please, wait ...');
+	$("#messageBox").dialog({
+		width: widthWin,
+		height: heightWin,
+		modal: true,
+		title: title,
+		close: function(event, ui) {
+			if (parentReload == true && !userLoggedIn && reloadPage == true) {
+				parent.document.location.reload();
+			}
+		}
+	}).dialog( 'open' );
+
+	$.get(url, function(data){
+		$("#messageBox").html(data);
+	});
+
+	return false;
+}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15554499-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="messageBox"></div>
+<div id="mainDiv">
+  <div id="headerPage">
+    <div id="logo">
+      <div class="png"></div>
+      <a href="http://www.careerlistonline.com/"><img src="http://www.careerlistonline.com/templates/OfficeView/main/images/logo.png" border="0" width="433px" height="80px "alt="SmartJobBoard recruitment demo site" title="SmartJobBoard recruitment demo site" /></a> </div>
+    <div id="userMenu-naacp"> Welcome amryh7@gmail.com, &nbsp; <a href="http://www.careerlistonline.com/"> Home</a> &nbsp; <a href="http://www.careerlistonline.com/logout/"> Logout</a>
+      <form id="langSwitcherForm" method="get" action="">
+        Choose language
+        <select name="lang" onchange="location.href='http://www.careerlistonline.com/search-results-jobs/?lang='+this.value+'&amp;action=search&amp;listing_type%5Bequal%5D=Job&amp;keywords%5Ball_words%5D=&amp;JobCategory%5Bmulti_like%5D%5B%5D=&amp;City%5Blike%5D=&amp;State%5Bmulti_like%5D%5B%5D='" style="width: 200px;">
+          <option value="ar">العربية</option>
+          <option value="de">Deutsch</option>
+          <option value="en" selected="selected">English</option>
+          <option value="es">Español</option>
+          <option value="fa">فارسی</option>
+          <option value="fr">Français</option>
+          <option value="hi">Hindi</option>
+          <option value="ja">日本語</option>
+          <option value="nl">Nederlands</option>
+          <option value="pl">Polski</option>
+          <option value="ps">پښتو</option>
+          <option value="pt">Português</option>
+          <option value="Romana">Română</option>
+          <option value="rs">Српски</option>
+          <option value="ru">Русский</option>
+          <option value="tr">Türkçe</option>
+          <option value="zh">Chinese</option>
+        </select>
+      </form>
+    </div>
+  </div>
+  <div class="clr"></div>
+  <div id="leftTopMenu"></div>
+  <div id="topMenu">
+    <ul>
+      <li><a href="http://www.careerlistonline.com/">Home</a></li>
+      <li><a href="http://www.careerlistonline.com/my-account/">My Account</a></li>
+      <li><a href="http://www.careerlistonline.com/find-jobs/" >Find Jobs</a></li>
+      <li><a href="http://www.careerlistonline.com/add-listing/?listing_type_id=Resume" >Post Resumes</a></li>
+      <li><a href="http://www.careerlistonline.com/contact/" >Contact</a></li>
+      <li><a href="http://www.veteransconnect.net" >Virtual Lobby</a></li>
+    </ul>
+  </div>
+  <div id="rightTopMenu"></div>
+  <div class="indexDiv"  id="noPad"> 
+    <script language="JavaScript" type="text/javascript" src="http://www.careerlistonline.com/system/ext/jquery/jquery-ui.js"></script> 
+    <script language="JavaScript" type="text/javascript" src="http://www.careerlistonline.com/system/ext/jquery/jquery.bgiframe.js"></script> 
+    <script type="text/javascript" language="JavaScript">
+
+$.ui.dialog.prototype.options.bgiframe = true;
+function submitForm(id) {
+	lpp = document.getElementById("listings_per_page" + id);
+	location.href = '?searchId=1447116473.4696&action=search&page=1&listings_per_page=' + lpp.value;
+}
+function SaveAd(noteId, url){
+	$.get(url, function(data){
+		$("#"+noteId).html(data);
+	});
+}
+
+</script>
+    <div class="results">
+      <div id="topResults">
+        <div class="headerBgBlock">
+          <div class="Results">Jobs Search Results</div>
+          <span></span> 
+          <!-- TOP QUICK LINKS -->
+          <div class="topResultsLinks">
+            <ul>
+              <li class="modifySearchIco"><a href="http://www.careerlistonline.com/find-jobs/?searchId=1447116473.4696"> Modify search</a></li>
+              <li class="saveSearchIco"><a onclick="popUpWindow('http://www.careerlistonline.com/save-search/?searchId=1447116473.4696', 350, 300, 'Save this search', true, true); return false;" href="http://www.careerlistonline.com/save-search/?searchId=1447116473.4696">Save this search</a></li>
+              <li class="saveSearchIco"><a onclick="popUpWindow('http://www.careerlistonline.com/save-search/?searchId=1447116473.4696&alert=1', 350, 300, 'Save Job Alert', true, true); return false;" href="http://www.careerlistonline.com/save-search/?searchId=1447116473.4696">Save Job Alert</a></li>
+              <li class="savedIco"> <a href="http://www.careerlistonline.com/saved-jobs">Saved jobs</a> </li>
+              <li class="savedIco"> <a href="http://www.careerlistonline.com/saved-searches/">Saved Searches</a> </li>
+            </ul>
+          </div>
+          <!-- END TOP QUICK LINKS --> 
+        </div>
+        
+        <!-- TOP RESULTS - PER PAGE - PAGE NAVIGATION -->
+        <div class="topNavBarLeft"></div>
+        <div class="topNavBar">
+          <div class="numberResults"> Results: 197 jobs </div>
+          <div class="numberPerPage">
+            <form id="listings_per_page_form" method="get" action="" class="tableSRNavPerPage">
+              Number of jobs per page:
+              <select id="listings_per_page1" name="listings_per_page1" onchange="submitForm(1); return false;">
+                <option value="10" selected="selected">10</option>
+                <option value="20" >20</option>
+                <option value="50" >50</option>
+                <option value="100" >100</option>
+              </select>
+            </form>
+          </div>
+          <div class="pageNavigation"> <span class="prevBtn"><img src="http://www.careerlistonline.com/templates/OfficeView/main/images/prev_btn.png" alt="Previous"/> <a>Previous</a></span> <span class="navigationItems"> <strong>1</strong> <a href="">2</a> <a href="">3</a> ... <a href="">20</a> </span> <span class="nextBtn"><a href="">Next</a> <img src="http://www.careerlistonline.com/templates/OfficeView/main/images/next_btn.png" alt="Next"/></span> </div>
+        </div>
+        <div class="topNavBarRight"></div>
+        <!-- END TOP RESULTS - PER PAGE - PAGE NAVIGATION --> 
+      </div>
+      
+      <!-- START REFINE SEARCH -->
+      <div id="refineResults">
+        <div id="blockBg">
+          <div id="blockTop"></div>
+          <div id="blockInner">
+            <table cellpadding="0" cellspacing="0" id="currentSearch">
+              <thead>
+                <tr>
+                  <th class="tableLeft"> </th>
+                  <th>&nbsp;Current Search:</th>
+                  <th class="tableRight"> </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3"><br/></td>
+                </tr>
+              </tbody>
+            </table>
+            <br/>
+            <table cellpadding="0" cellspacing="0" width="100%" id="refineResults">
+              <thead>
+                <tr>
+                  <th class="tableLeft"> </th>
+                  <th>&nbsp;Refine Results:</th>
+                  <th class="tableRight"> </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3"><div class="refine_button">
+                      <div class="refine_icon">[+]</div>
+                      <strong>State</strong></div>
+                    <div class="refine_block" style="display: none">
+                      <div class="refineItem"><a href="">California</a> (41)</div>
+                      <div class="refineItem"><a href="">Illinois</a> (18)</div>
+                      <div class="refineItem"><a href="">Iowa</a> (17)</div>
+                      <div class="refineItem"><a href="">Maryland</a> (16)</div>
+                      <div class="refineItem"><a href="">Washington</a> (14)</div>
+                      <div class="block_values" style="display: none">
+                        <div class="refineItem"><a href="">Texas</a> (13)</div>
+                        <div class="refineItem"><a href="">Minnesota</a> (9)</div>
+                        <div class="refineItem"><a href="">District of Columbia</a> (6)</div>
+                        <div class="refineItem"><a href="">New York</a> (5)</div>
+                        <div class="refineItem"><a href="">New Jersey</a> (5)</div>
+                        <div class="refineItem"><a href="">Colorado</a> (4)</div>
+                        <div class="refineItem"><a href="">Missouri</a> (3)</div>
+                        <div class="refineItem"><a href="">Idaho</a> (3)</div>
+                        <div class="refineItem"><a href="">Florida</a> (3)</div>
+                        <div class="refineItem"><a href="">Pennsylvania</a> (2)</div>
+                        <div class="refineItem"><a href="">Massachusetts</a> (2)</div>
+                        <div class="refineItem"><a href="">Georgia</a> (2)</div>
+                        <div class="refineItem"><a href="">Arkansas</a> (2)</div>
+                        <div class="refineItem"><a href="">New Mexico</a> (1)</div>
+                        <div class="refineItem"><a href="">Nebraska</a> (1)</div>
+                        <div class="refineItem"><a href="">Oklahoma</a> (1)</div>
+                        <div class="refineItem"><a href="">Virginia</a> (1)</div>
+                        <div class="refineItem"><a href="">Tennessee</a> (1)</div>
+                        <div class="refineItem"><a href="">Arizona</a> (1)</div>
+                        <div class="refineItem"><a href="">North Carolina</a> (1)</div>
+                        <div class="refineItem"><a href="">Ohio</a> (1)</div>
+                      </div>
+                      <div class="block_values_button"> &nbsp; &#187; more</div>
+                    </div>
+                    <div class="refine_button">
+                      <div class="refine_icon">[+]</div>
+                      <strong>City</strong></div>
+                    <div class="refine_block" style="display: none">
+                      <div class="refineItem"><a href="">Elk Grove Village</a> (13)</div>
+                      <div class="refineItem"><a href="">Oakland</a> (10)</div>
+                      <div class="refineItem"><a href="">Seattle</a> (9)</div>
+                      <div class="refineItem"><a href="">Cedar Rapids</a> (8)</div>
+                      <div class="refineItem"><a href="">Rockville</a> (8)</div>
+                      <div class="block_values" style="display: none">
+                        <div class="refineItem"><a href="">Washington</a> (6)</div>
+                        <div class="refineItem"><a href="">Roseau</a> (5)</div>
+                        <div class="refineItem"><a href="">Sioux City</a> (4)</div>
+                        <div class="refineItem"><a href="">Mason City</a> (4)</div>
+                        <div class="refineItem"><a href="">Silver Spring</a> (4)</div>
+                        <div class="refineItem"><a href="">Cedar Rapids IA, Plano TX, Baltimore MD, St. Petersburg FL, Denver CO, Los Angeles CA, Exton PA</a> (4)</div>
+                        <div class="refineItem"><a href="">Redmond</a> (4)</div>
+                        <div class="refineItem"><a href="">Chesterfield,</a> (3)</div>
+                        <div class="refineItem"><a href="">Houston</a> (3)</div>
+                        <div class="refineItem"><a href="">San Francisco</a> (3)</div>
+                        <div class="refineItem"><a href="">St. Petersburg</a> (3)</div>
+                        <div class="refineItem"><a href="">Harrison NY, St. Petersburg FL</a> (3)</div>
+                        <div class="refineItem"><a href="">Los Angeles</a> (3)</div>
+                        <div class="refineItem"><a href="">Denver</a> (3)</div>
+                        <div class="refineItem"><a href="">Livermore</a> (3)</div>
+                        <div class="refineItem"><a href="">Cedar Rapids IA, St. Petersburg FL</a> (3)</div>
+                        <div class="refineItem"><a href="">Irving</a> (2)</div>
+                        <div class="refineItem"><a href="">Nampa</a> (2)</div>
+                        <div class="refineItem"><a href="">Little Rock</a> (2)</div>
+                        <div class="refineItem"><a href="">Ripon</a> (2)</div>
+                        <div class="refineItem"><a href="">Tracy</a> (2)</div>
+                        <div class="refineItem"><a href="">Stockton</a> (2)</div>
+                        <div class="refineItem"><a href="">Elk GroveGrove Village</a> (2)</div>
+                        <div class="refineItem"><a href="">Chicago</a> (2)</div>
+                        <div class="refineItem"><a href="">Plano</a> (2)</div>
+                        <div class="refineItem"><a href="">Carlsbad</a> (1)</div>
+                        <div class="refineItem"><a href="">Fremont</a> (1)</div>
+                        <div class="refineItem"><a href="">Austin</a> (1)</div>
+                        <div class="refineItem"><a href="">Spring</a> (1)</div>
+                        <div class="refineItem"><a href="">Cleburne</a> (1)</div>
+                        <div class="refineItem"><a href="">Cedar Rapids, Plano, Exton, Baltimore</a> (1)</div>
+                        <div class="refineItem"><a href="">Andover</a> (1)</div>
+                        <div class="refineItem"><a href="">Long Island Stores</a> (1)</div>
+                        <div class="refineItem"><a href="">Kearny</a> (1)</div>
+                        <div class="refineItem"><a href="">Princeton</a> (1)</div>
+                        <div class="refineItem"><a href="">Rockaway</a> (1)</div>
+                        <div class="refineItem"><a href="">Howell</a> (1)</div>
+                        <div class="refineItem"><a href="">Vineland</a> (1)</div>
+                        <div class="refineItem"><a href="">Boise</a> (1)</div>
+                        <div class="refineItem"><a href="">Boston</a> (1)</div>
+                        <div class="refineItem"><a href="">Albany</a> (1)</div>
+                        <div class="refineItem"><a href="">El Paso</a> (1)</div>
+                        <div class="refineItem"><a href="">McAllen</a> (1)</div>
+                        <div class="refineItem"><a href="">SE Bay Area</a> (1)</div>
+                        <div class="refineItem"><a href="">San Jose</a> (1)</div>
+                      </div>
+                      <div class="block_values_button"> &nbsp; &#187; more</div>
+                    </div>
+                    <div class="refine_button">
+                      <div class="refine_icon">[+]</div>
+                      <strong>Employment Type</strong></div>
+                    <div class="refine_block" style="display: none">
+                      <div class="refineItem"><a href="">Full time</a> (158)</div>
+                      <div class="refineItem"><a href="">Part time</a> (6)</div>
+                      <div class="refineItem"><a href="">Contractor</a> (1)</div>
+                    </div>
+                    <div class="refine_button">
+                      <div class="refine_icon">[+]</div>
+                      <strong>Company Name</strong></div>
+                    <div class="refine_block" style="display: none">
+                      <div class="refineItem"><a href="">Transamerica</a> (48)</div>
+                      <div class="refineItem"><a href="">American Academy of Pediatrics</a> (16)</div>
+                      <div class="refineItem"><a href="">Wells Fargo</a> (15)</div>
+                      <div class="refineItem"><a href="">Trinity Health</a> (15)</div>
+                      <div class="refineItem"><a href="">Perkins Coie LLP</a> (14)</div>
+                      <div class="block_values" style="display: none">
+                        <div class="refineItem"><a href="">Draeger, Inc.</a> (14)</div>
+                        <div class="refineItem"><a href="">Westat</a> (14)</div>
+                        <div class="refineItem"><a href="">The Wine Group</a> (13)</div>
+                        <div class="refineItem"><a href="">Quintiles</a> (12)</div>
+                        <div class="refineItem"><a href="">University of California Office of the President</a> (10)</div>
+                        <div class="refineItem"><a href="">Pepco Holdings, Inc.</a> (7)</div>
+                        <div class="refineItem"><a href="">WaMart Stores Inc</a> (6)</div>
+                        <div class="refineItem"><a href="">Select Staffing at Polaris</a> (5)</div>
+                        <div class="refineItem"><a href="">Terex Corporation</a> (4)</div>
+                        <div class="refineItem"><a href="">MOHELA</a> (3)</div>
+                        <div class="refineItem"><a href="">AMVETS Career Center</a> (1)</div>
+                      </div>
+                      <div class="block_values_button"> &nbsp; &#187; more</div>
+                    </div>
+                    <div class="refine_button">
+                      <div class="refine_icon">[+]</div>
+                      <strong>Occupations</strong></div>
+                    <div class="refine_block" style="display: none">
+                      <div class="refineItem"><a href="">Bookkeeping</a> (4)</div>
+                      <div class="refineItem"><a href="">Claims Review and Adjusting</a> (4)</div>
+                      <div class="refineItem"><a href="">Collections</a> (4)</div>
+                      <div class="refineItem"><a href="">Corporate Accounting</a> (4)</div>
+                      <div class="refineItem"><a href="">Corporate Finance</a> (5)</div>
+                      <div class="block_values" style="display: none">
+                        <div class="refineItem"><a href="">Credit Review-Analysis</a> (4)</div>
+                        <div class="refineItem"><a href="">Financial Analysis-Research-Reporting</a> (7)</div>
+                        <div class="refineItem"><a href="">Financial Control</a> (5)</div>
+                        <div class="refineItem"><a href="">Financial Planning-Advising</a> (6)</div>
+                        <div class="refineItem"><a href="">Financial Products Sales-Brokerage</a> (4)</div>
+                        <div class="refineItem"><a href="">Fund Accounting</a> (4)</div>
+                        <div class="refineItem"><a href="">General-Other: Accounting-Finance</a> (4)</div>
+                        <div class="refineItem"><a href="">Investment Management</a> (4)</div>
+                        <div class="refineItem"><a href="">Policy Underwriting</a> (4)</div>
+                        <div class="refineItem"><a href="">Real Estate Appraisal</a> (4)</div>
+                        <div class="refineItem"><a href="">Real Estate Leasing-Acquisition</a> (4)</div>
+                        <div class="refineItem"><a href="">Risk Management-Compliance</a> (4)</div>
+                        <div class="refineItem"><a href="">Securities Analysis-Research</a> (4)</div>
+                        <div class="refineItem"><a href="">Tax Accounting</a> (4)</div>
+                        <div class="refineItem"><a href="">Tax Assessment and Collections</a> (4)</div>
+                        <div class="refineItem"><a href="">Administrative Support</a> (6)</div>
+                        <div class="refineItem"><a href="">Claims Processing</a> (2)</div>
+                        <div class="refineItem"><a href="">Data Entry-Order Processing</a> (3)</div>
+                        <div class="refineItem"><a href="">Executive Support</a> (2)</div>
+                        <div class="refineItem"><a href="">Filing-Records Management</a> (2)</div>
+                        <div class="refineItem"><a href="">General-Other: Administrative-Clerical</a> (4)</div>
+                        <div class="refineItem"><a href="">Office Management</a> (4)</div>
+                        <div class="refineItem"><a href="">Property Management</a> (2)</div>
+                        <div class="refineItem"><a href="">Reception-Switchboard</a> (2)</div>
+                        <div class="refineItem"><a href="">Secretary-Executive Assistant</a> (2)</div>
+                        <div class="refineItem"><a href="">Transcription</a> (2)</div>
+                        <div class="refineItem"><a href="">Bank Teller</a> (15)</div>
+                        <div class="refineItem"><a href="">Credit Manager</a> (15)</div>
+                        <div class="refineItem"><a href="">Escrow Officer-Manager</a> (15)</div>
+                        <div class="refineItem"><a href="">Loan Officer-Originator</a> (15)</div>
+                        <div class="refineItem"><a href="">Mortgage Broker</a> (15)</div>
+                        <div class="refineItem"><a href="">Store-Branch Management</a> (15)</div>
+                        <div class="refineItem"><a href="">Title Officer-Closer</a> (15)</div>
+                        <div class="refineItem"><a href="">Underwriter</a> (15)</div>
+                        <div class="refineItem"><a href="">CAD-Drafting</a> (1)</div>
+                        <div class="refineItem"><a href="">Business Analysis-Research</a> (1)</div>
+                        <div class="refineItem"><a href="">Business Unit Management</a> (1)</div>
+                        <div class="refineItem"><a href="">Hospital-Clinic Administration</a> (1)</div>
+                        <div class="refineItem"><a href="">Account Management (Non-Commissioned)</a> (15)</div>
+                        <div class="refineItem"><a href="">Bank Teller</a> (15)</div>
+                        <div class="refineItem"><a href="">Call Center</a> (15)</div>
+                        <div class="refineItem"><a href="">Customer Training</a> (15)</div>
+                        <div class="refineItem"><a href="">Flight Attendant</a> (15)</div>
+                        <div class="refineItem"><a href="">General-Other: Customer Support-Client Care</a> (17)</div>
+                        <div class="refineItem"><a href="">Hair Cutting-Styling</a> (15)</div>
+                      </div>
+                      <div class="block_values_button"> &nbsp; &#187; more</div>
+                    </div>
+                    <br/></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- END REFINE SEARCH --> 
+      
+      <!-- LISTINGS TABLE -->
+      <div id="listingsResults">
+        <table cellspacing="0">
+          <thead>
+            <tr>
+              <th class="tableLeft"> </th>
+              <th width="50%"> <a href="">Title</a> <a href="" id="showBriefOrDetailed">(show brief)</a> </th>
+              <th width="20%"> <a href="">Company</a> </th>
+              <th width="20%"> <a href="">City</a> </th>
+              <th width="10%"> <a href="">Posted</a> <img src="http://www.careerlistonline.com/templates/OfficeView/main/images/b_down_arrow.png" alt="Down" /> </th>
+              <th class="tableRight"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Job Info Start -->
+            <tr class="evenrow">
+              <td colspan="6"><table>
+                  <tr>
+                    <td></td>
+                    <td width="50%"><a name="listing_5321"></a> <a href="http://www.careerlistonline.com/display-job/5321/Intermediate-Web-Developer-15000620.html?searchId=1447116473.4696&amp;page=1"><strong>Intermediate Web Developer-15000620</strong></a></td>
+                    <td width="20%"><a href="http://www.careerlistonline.com/company/5529/Transamerica">Transamerica</a></td>
+                    <td width="20%">Cedar Rapids IA, Plano TX, Baltimore MD, St. Petersburg FL, Denver CO, Los Angeles CA, Exton PA</td>
+                    <td width="10%">11.06.2015</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4">&nbsp; Company Description  
+                      The Transamerica companies offer a wide array of innovative financial services...</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4"><ul>
+                        <li class="saved2Ico"> <span id='notes_5321'> <a href="http://www.careerlistonline.com/edit-notes/?listing_id=5321" onclick="SaveAd( 'formNote_5321', 'http://www.careerlistonline.com/edit-notes/?listing_sid=5321'); return false;"  class="action">Edit notes</a>&nbsp;&nbsp; </span> </li>
+                        <li class="viewDetails"><a href="http://www.careerlistonline.com/display-job/5321/Intermediate-Web-Developer-15000620.html?searchId=1447116473.4696&amp;page=1">View job details</a></li>
+                      </ul>
+                      <span id = 'formNote_5321'> <b>My notes:</b> Applied 11-9-2015@12:16 </span><br/></td>
+                    <td></td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td colspan="6" class="separateListing"></td>
+            </tr>
+            <tr class="oddrow">
+              <td colspan="6"><table>
+                  <tr>
+                    <td></td>
+                    <td width="50%"><a name="listing_5320"></a> <a href="http://www.careerlistonline.com/display-job/5320/Programmer-Analyst-15000635.html?searchId=1447116473.4696&amp;page=1"><strong>Programmer Analyst-15000635</strong></a></td>
+                    <td width="20%"><a href="http://www.careerlistonline.com/company/5529/Transamerica">Transamerica</a></td>
+                    <td width="20%">Cedar Rapids IA, Plano TX, Baltimore MD, St. Petersburg FL, Denver CO, Los Angeles CA, Exton PA</td>
+                    <td width="10%">11.06.2015</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4">&nbsp; Company Description  
+                      The Transamerica companies offer a wide array of innovative financial services and...</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4"><ul>
+                        <li class="saved2Ico"> <span id='notes_5320'> <a href="http://www.careerlistonline.com/edit-notes/?listing_id=5320" onclick="SaveAd( 'formNote_5320', 'http://www.careerlistonline.com/edit-notes/?listing_sid=5320'); return false;"  class="action">Edit notes</a>&nbsp;&nbsp; </span> </li>
+                        <li class="viewDetails"><a href="http://www.careerlistonline.com/display-job/5320/Programmer-Analyst-15000635.html?searchId=1447116473.4696&amp;page=1">View job details</a></li>
+                      </ul>
+                      <span id = 'formNote_5320'> <b>My notes:</b> Applied 11-9-2015@12:33 </span><br/></td>
+                    <td></td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td colspan="6" class="separateListing"></td>
+            </tr>
+            <tr class="evenrow">
+              <td colspan="6"><table>
+                  <tr>
+                    <td></td>
+                    <td width="50%"><a name="listing_5318"></a> <a href="http://www.careerlistonline.com/display-job/5318/Web-Developer-1500061D.html?searchId=1447116473.4696&amp;page=1"><strong>Web Developer-1500061D</strong></a></td>
+                    <td width="20%"><a href="http://www.careerlistonline.com/company/5529/Transamerica">Transamerica</a></td>
+                    <td width="20%">Cedar Rapids IA, Plano TX, Baltimore MD, St. Petersburg FL, Denver CO, Los Angeles CA, Exton PA</td>
+                    <td width="10%">11.06.2015</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4">&nbsp; Company Description  
+                      The Transamerica companies offer a wide array of innovative financial services and...</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4"><ul>
+                        <li class="saved2Ico"> <span id='notes_5318'> <a href="http://www.careerlistonline.com/edit-notes/?listing_id=5318" onclick="SaveAd( 'formNote_5318', 'http://www.careerlistonline.com/edit-notes/?listing_sid=5318'); return false;"  class="action">Edit notes</a>&nbsp;&nbsp; </span> </li>
+                        <li class="viewDetails"><a href="http://www.careerlistonline.com/display-job/5318/Web-Developer-1500061D.html?searchId=1447116473.4696&amp;page=1">View job details</a></li>
+                      </ul>
+                      <span id = 'formNote_5318'> <b>My notes:</b> Applied 11-9-2015@12:22 </span><br/></td>
+                    <td></td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td colspan="6" class="separateListing"></td>
+            </tr>
+            <tr class="oddrow">
+              <td colspan="6"><table>
+                  <tr>
+                    <td></td>
+                    <td width="50%"><a name="listing_5316"></a> <a href="http://www.careerlistonline.com/display-job/5316/Business-System-Analyst-15000632.html?searchId=1447116473.4696&amp;page=1"><strong>Business System Analyst-15000632</strong></a></td>
+                    <td width="20%"><a href="http://www.careerlistonline.com/company/5529/Transamerica">Transamerica</a></td>
+                    <td width="20%">Cedar Rapids IA, Plano TX, Baltimore MD, St. Petersburg FL, Denver CO, Los Angeles CA, Exton PA, Harrison NY</td>
+                    <td width="10%">11.06.2015</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4">&nbsp; Company Description  
+                      The Transamerica companies offer a wide array of innovative financial services and...</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4"><ul>
+                        <li class="saved2Ico"> <span id='notes_5316'> <a href="http://www.careerlistonline.com/saved-ads/?listing_id=5316" onclick="SaveAd('notes_5316', 'http://www.careerlistonline.com/saved-ads/?listing_id=5316&listing_type=job'); return false;"  class="action">Save ad</a>&nbsp;&nbsp; </span> </li>
+                        <li class="viewDetails"><a href="http://www.careerlistonline.com/display-job/5316/Business-System-Analyst-15000632.html?searchId=1447116473.4696&amp;page=1">View job details</a></li>
+                      </ul>
+                      <span id = 'formNote_5316'> </span><br/></td>
+                    <td></td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td colspan="6" class="separateListing"></td>
+            </tr>
+            <tr class="evenrow">
+              <td colspan="6"><table>
+                  <tr>
+                    <td></td>
+                    <td width="50%"><a name="listing_5247"></a> <a href="http://www.careerlistonline.com/display-job/5247/Intermediate-Business-Systems-Analyst-150004N8.html?searchId=1447116473.4696&amp;page=1"><strong>Intermediate Business Systems Analyst-150004N8</strong></a></td>
+                    <td width="20%"><a href="http://www.careerlistonline.com/company/5529/Transamerica">Transamerica</a></td>
+                    <td width="20%">Plano</td>
+                    <td width="10%">11.05.2015</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4"> Company Description:  
+                      The Transamerica companies offer a wide array of innovative financial services and...</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4"><ul>
+                        <li class="saved2Ico"> <span id='notes_5247'> <a href="http://www.careerlistonline.com/edit-notes/?listing_id=5247" onclick="SaveAd( 'formNote_5247', 'http://www.careerlistonline.com/edit-notes/?listing_sid=5247'); return false;"  class="action">Edit notes</a>&nbsp;&nbsp; </span> </li>
+                        <li class="viewDetails"><a href="http://www.careerlistonline.com/display-job/5247/Intermediate-Business-Systems-Analyst-150004N8.html?searchId=1447116473.4696&amp;page=1">View job details</a></li>
+                      </ul>
+                      <span id = 'formNote_5247'> <b>My notes:</b> Applied 11-9-2015@12:36 </span><br/></td>
+                    <td></td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td colspan="6" class="separateListing"></td>
+            </tr>
+            <tr class="oddrow">
+              <td colspan="6"><table>
+                  <tr>
+                    <td></td>
+                    <td width="50%"><a name="listing_5246"></a> <a href="http://www.careerlistonline.com/display-job/5246/Senior-Business-Intelligence-Developer-150005Q7.html?searchId=1447116473.4696&amp;page=1"><strong>Senior Business Intelligence Developer-150005Q7</strong></a></td>
+                    <td width="20%"><a href="http://www.careerlistonline.com/company/5529/Transamerica">Transamerica</a></td>
+                    <td width="20%">Cedar Rapids IA, Plano TX, St. Petersburg FL</td>
+                    <td width="10%">11.05.2015</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4"> Company Information:  
+                      The Transamerica companies offer a wide array of innovative financial services and...</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4"><ul>
+                        <li class="saved2Ico"> <span id='notes_5246'> <a href="http://www.careerlistonline.com/saved-ads/?listing_id=5246" onclick="SaveAd('notes_5246', 'http://www.careerlistonline.com/saved-ads/?listing_id=5246&listing_type=job'); return false;"  class="action">Save ad</a>&nbsp;&nbsp; </span> </li>
+                        <li class="viewDetails"><a href="http://www.careerlistonline.com/display-job/5246/Senior-Business-Intelligence-Developer-150005Q7.html?searchId=1447116473.4696&amp;page=1">View job details</a></li>
+                      </ul>
+                      <span id = 'formNote_5246'> </span><br/></td>
+                    <td></td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td colspan="6" class="separateListing"></td>
+            </tr>
+            <tr class="evenrow">
+              <td colspan="6"><table>
+                  <tr>
+                    <td></td>
+                    <td width="50%"><a name="listing_5245"></a> <a href="http://www.careerlistonline.com/display-job/5245/Senior-Java-Web-Developer-150005QQ.html?searchId=1447116473.4696&amp;page=1"><strong>Senior Java Web Developer-150005QQ</strong></a></td>
+                    <td width="20%"><a href="http://www.careerlistonline.com/company/5529/Transamerica">Transamerica</a></td>
+                    <td width="20%">Plano</td>
+                    <td width="10%">11.05.2015</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4"> Company Description : 
+                      The Transamerica companies offer a wide array of innovative financial services and...</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4"><ul>
+                        <li class="saved2Ico"> <span id='notes_5245'> <a href="http://www.careerlistonline.com/saved-ads/?listing_id=5245" onclick="SaveAd('notes_5245', 'http://www.careerlistonline.com/saved-ads/?listing_id=5245&listing_type=job'); return false;"  class="action">Save ad</a>&nbsp;&nbsp; </span> </li>
+                        <li class="viewDetails"><a href="http://www.careerlistonline.com/display-job/5245/Senior-Java-Web-Developer-150005QQ.html?searchId=1447116473.4696&amp;page=1">View job details</a></li>
+                      </ul>
+                      <span id = 'formNote_5245'> </span><br/></td>
+                    <td></td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td colspan="6" class="separateListing"></td>
+            </tr>
+            <tr class="oddrow">
+              <td colspan="6"><table>
+                  <tr>
+                    <td></td>
+                    <td width="50%"><a name="listing_5219"></a> <a href="http://www.careerlistonline.com/display-job/5219/Quantitative-Analyst-II-Sales-Operations.html?searchId=1447116473.4696&amp;page=1"><strong>Quantitative Analyst II-Sales Operations</strong></a></td>
+                    <td width="20%"><a href="http://www.careerlistonline.com/company/5531/Terex-Corporation">Terex Corporation</a></td>
+                    <td width="20%">Redmond</td>
+                    <td width="10%">11.04.2015</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4">Genie Industries is a major component of the Terex AWP Segment, which is a division of Terex Corporation. Terex...</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4"><ul>
+                        <li class="saved2Ico"> <span id='notes_5219'> <a href="http://www.careerlistonline.com/saved-ads/?listing_id=5219" onclick="SaveAd('notes_5219', 'http://www.careerlistonline.com/saved-ads/?listing_id=5219&listing_type=job'); return false;"  class="action">Save ad</a>&nbsp;&nbsp; </span> </li>
+                        <li class="viewDetails"><a href="http://www.careerlistonline.com/display-job/5219/Quantitative-Analyst-II-Sales-Operations.html?searchId=1447116473.4696&amp;page=1">View job details</a></li>
+                      </ul>
+                      <span id = 'formNote_5219'> </span><br/></td>
+                    <td></td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td colspan="6" class="separateListing"></td>
+            </tr>
+            <tr class="evenrow">
+              <td colspan="6"><table>
+                  <tr>
+                    <td></td>
+                    <td width="50%"><a name="listing_5218"></a> <a href="http://www.careerlistonline.com/display-job/5218/Manager,-Global-Trade-Compliance.html?searchId=1447116473.4696&amp;page=1"><strong>Manager, Global Trade Compliance</strong></a></td>
+                    <td width="20%"><a href="http://www.careerlistonline.com/company/5531/Terex-Corporation">Terex Corporation</a></td>
+                    <td width="20%">Redmond</td>
+                    <td width="10%">11.04.2015</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4">Genie Industries/Terex Aerial Work Platforms (AWP), a business segment of the Terex Corporation, is headquartered in...</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4"><ul>
+                        <li class="saved2Ico"> <span id='notes_5218'> <a href="http://www.careerlistonline.com/saved-ads/?listing_id=5218" onclick="SaveAd('notes_5218', 'http://www.careerlistonline.com/saved-ads/?listing_id=5218&listing_type=job'); return false;"  class="action">Save ad</a>&nbsp;&nbsp; </span> </li>
+                        <li class="viewDetails"><a href="http://www.careerlistonline.com/display-job/5218/Manager,-Global-Trade-Compliance.html?searchId=1447116473.4696&amp;page=1">View job details</a></li>
+                      </ul>
+                      <span id = 'formNote_5218'> </span><br/></td>
+                    <td></td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td colspan="6" class="separateListing"></td>
+            </tr>
+            <tr class="oddrow">
+              <td colspan="6"><table>
+                  <tr>
+                    <td></td>
+                    <td width="50%"><a name="listing_5169"></a> <a href="http://www.careerlistonline.com/display-job/5169/Compliance-Analyst-150002FK.html?searchId=1447116473.4696&amp;page=1"><strong>Compliance Analyst-150002FK</strong></a></td>
+                    <td width="20%"><a href="http://www.careerlistonline.com/company/5529/Transamerica">Transamerica</a></td>
+                    <td width="20%">West Chest</td>
+                    <td width="10%">11.03.2015</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4">&nbsp; The Transamerica companies offer a wide array of innovative financial services and products with a common...</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td colspan="4"><ul>
+                        <li class="saved2Ico"> <span id='notes_5169'> <a href="http://www.careerlistonline.com/saved-ads/?listing_id=5169" onclick="SaveAd('notes_5169', 'http://www.careerlistonline.com/saved-ads/?listing_id=5169&listing_type=job'); return false;"  class="action">Save ad</a>&nbsp;&nbsp; </span> </li>
+                        <li class="viewDetails"><a href="http://www.careerlistonline.com/display-job/5169/Compliance-Analyst-150002FK.html?searchId=1447116473.4696&amp;page=1">View job details</a></li>
+                      </ul>
+                      <span id = 'formNote_5169'> </span><br/></td>
+                    <td></td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td colspan="6" class="separateListing"></td>
+            </tr>
+            <!-- END Job Info Start -->
+          </tbody>
+        </table>
+      </div>
+      <!-- END LISTINGS TABLE --> 
+      
+      <!-- BOTTOM RESULTS - PER PAGE - PAGE NAVIGATION -->
+      <div id="endResults">
+        <div class="topResultsLinks">
+          <div class="topNavBarLeft"></div>
+          <div class="topNavBar">
+            <div class="numberResults"> Results: 197 jobs </div>
+            <div class="numberPerPage">
+              <form id="listings_per_page_form" method="get" action="" class="tableSRNavPerPage">
+                Number of jobs per page:
+                <select id="listings_per_page2" name="listings_per_page2" onchange="submitForm(2); return false;">
+                  <option value="10" selected="selected">10</option>
+                  <option value="20" >20</option>
+                  <option value="50" >50</option>
+                  <option value="100" >100</option>
+                </select>
+              </form>
+            </div>
+            <div class="pageNavigation"> <span class="prevBtn"><img src="http://www.careerlistonline.com/templates/OfficeView/main/images/prev_btn.png" alt=""/> <a>Previous</a></span> <span class="navigationItems"> <strong>1</strong> <a href="">2</a> <a href="">3</a> ... <a href="">20</a> </span> <span class="nextBtn"><a href="">Next</a> <img src="http://www.careerlistonline.com/templates/OfficeView/main/images/next_btn.png" alt=""/></span> </div>
+          </div>
+          <div class="topNavBarRight"></div>
+        </div>
+      </div>
+      <!-- END BOTTOM RESULTS - PER PAGE - PAGE NAVIGATION --> 
+    </div>
+    <script>
+		$(".refine_button").click(function(){
+			var butt = $(this);
+			$(this).next(".refine_block").slideToggle("normal", function(){
+					if ($(this).css("display") == "block") {
+						butt.children(".refine_icon").html("[-]");
+					} else {
+						butt.children(".refine_icon").html("[+]");
+					}
+				});
+		});
+		$(".block_values_button").click(function(){
+			var butt = $(this);
+			$(this).prev(".block_values").slideToggle("normal", function(){
+					if ($(this).css("display") == "block") {
+						butt.html(" &nbsp; &#171; less");
+					} else {
+						butt.html(" &nbsp; &#187; more");
+					}
+				});
+		});
+	</script> 
+  </div>
+  <div id="grayBgBanner">
+    <div class="banner"> <a href="http://www.careerlistonline.com/go-link/?bannerId=121" target="_blank"> <img src="http://www.careerlistonline.com/files/banners/94fa4ee9de9a310d7de5cadbfeea895e_logo.png" width="433" height="68" title="Veterans" border="0"/> </a> </div>
+  </div>
+  <div class="clr"></div>
+  <div id="footerLeft"></div>
+  <div id="footerBg">&copy; 2000-2015 Рowered by <a href="http://www.ashtondata.com" title="Ashton Data, LLC - Providing Solution Through Research"  target="_blank">Ashton Data, LLC</a> &nbsp; &nbsp; <a href="http://www.careerlistonline.com/about/">About Us</a> &nbsp; <a href="http://www.careerlistonline.com/site-map/">Sitemap</a></div>
+  <div id="footerRight"></div>
+</div>
+<div class="clr"><br/>
+</div>
+</body>
+</html>

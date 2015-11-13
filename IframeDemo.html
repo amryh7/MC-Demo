@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.Headline{
+			font-family: Arial;
+			font-size: 14pt;
+			color: #003564;
+			font-weight: bold;
+			font-style: normal;
+			text-decoration: none;border-bottom: 2px solid #003564; padding-bottom: 3px; margin-bottom: 12px;}
+			
+		h2{font-family: Arial;
+			font-size: 11pt;
+			color: #005724;
+			font-weight: bold;
+			font-style: normal;
+			text-decoration: none; margin-bottom: 0;}
+		.Section1{text-align: left; margin: 10px 0px; padding:0px 7px 0px 0px;}
+		.textLayoutStylesOne{line-height: 20px; border-bottom: 1px solid #005724;}
+		.textFirstFloat{float: left; width: 100%; height: auto;}
+		.Hyperlink{
+			font-family: Arial;
+			font-size: 10pt;
+			color: #005724;
+			font-weight: normal;
+			font-style: normal;
+			text-decoration: underline;}
+		.Hyperlink:after{content: url(Assets/imgs/PDF-icon.png); margin-left: 10px;}
+		.loading-img{display: none; height: 25px; vertical-align: center;}
+		.search-box{padding: 10px 0 20px 0;}
+		.search-box-form{display: inline;}
+		.search-result-heading{margin-bottom: 0px;}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="scripts/ajax-scripts.js"></script>
+</head>
+<body>
+	<div id="Section1">
+		<h1 class="Headline">Board Meeting Minutes</h1>
+		
+		
+		
+		<div class="textLayoutStylesOne">
+			<h2>Search Meeting Minutes</h2>
+			
+			<div class="search-box">
+				<form  class="search-box-form" action="javascript:callSearch();">
+					<label for="search_terms">Search: </label>
+					<input type="text" name="search_terms" value="meeting" placeholder="search">
+				<img class="loading-img" src="Assets/imgs/loading.gif">
+				</form>
+				<div class="search-results"></div>
+			</div>
+		</div>
+		
+		<?php require_once('/DB/PHP/JSON_mmCreatos.php'); ?>
+		
+		<div class="textLayoutStylesOne">
+			<h2>County Board Meeting Minutes</h2>
+			<!--County Board Meeting Minutes-->
+                      
+			<table summary="Table for layout purposes" border="0" cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td>
+						<div id="Section1">
+							<div class="textLayoutStylesOne" style="line-height: 20px;">
+								<div class="textFirstFloat" style="float: left; width: 100%; height: auto;">
+									<div class="textLineHeight" style="width: 100%; line-height: 16px;">
+										<p>
+										  <a title="County Board Meeting Minutes -- October 19, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/69590" target="_blank">
+										  County Board Meeting Minutes -- October 19, 2015</a><br>
+										  <a title="County Board Meeting Minutes -- October 5, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/69580" target="_blank">County Board Meeting Minutes -- October 5, 2015</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- September 23, 2015 (Special Meeting -- Budget Hearings for FY 2016)" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/69577" target="_blank">County Board Meeting Minutes -- September 23, 2015&nbsp; (Special Meeting -- Budget Hearings for FY 2016)</a><br>
+										  <a title="County Board Meeting Minutes -- September 22, 2015 (Special Meeting -- Budget Hearings for FY 2016)" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/69576" target="_blank">County Board Meeting Minutes -- September 22, 2015&nbsp; (Special Meeting -- Budget Hearings for FY 2016)</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- September 21, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/69575" target="_blank">County Board Meeting Minutes -- September 21, 2015</a><br>
+										  <a title="County Board Meeting Minutes -- September 8, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/69571" target="_blank">County Board Meeting Minutes -- September 8, 2015</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/69567" target="_blank">County Board Meeting Minutes -- August 17, 2015</a><br>
+										  <a title="County Board Meeting Minutes" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/69564" target="_blank">County Board Meeting Minutes -- August 3, 2015</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- July 20, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/65903" target="_blank">County Board Meeting Minutes -- July 20, 2015</a><br>
+										  <a title="County Board Meeting Minutes -- July 6, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/65901" target="_blank">County Board Meeting Minutes -- July 6, 2015</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- June 15, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/65889" target="_blank">County Board Meeting Minutes -- June 15, 2015</a><br>
+										  <a title="County Board Meeting Minutes -- June 1, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/65885" target="_blank">County Board Meeting Minutes -- June 1, 2015</a><br>
+										  <a title="County Board Meeting Minutes -- May 18, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/65880" target="_blank"><br>
+										  County Board Meeting Minutes -- May 18, 2015</a><br>
+										  <a title="County Board Meeting Minutes -- May 4, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/65878" target="_blank">County Board Meeting Minutes -- May 4, 2015</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- April 20, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/65871" target="_blank">County Board Meeting Minutes -- April 20, 2015</a><br>
+										  <a title="County Board Meeting Minutes -- April 6, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/65866" target="_blank">County Board Meeting Minutes -- April 6, 2015</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- March 16, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/65858" target="_blank">County Board Meeting Minutes -- March 16, 2015</a><br>
+										  <a title="County Board Meeting Minutes -- March 12, 2015 (Special Meeting - Oak Hill Rehabilitation Addition - Architect Discussion)" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/65865" target="_blank">County Board Meeting Minutes -- March 12, 2015&nbsp; (Special Meeting -- Oak Hill Rehabilitation Addition - Architect Discussion)</a><br>
+										  <a title="County Board Meeting Minutes -- March 12, 2015 (Special Meeting -- Oak Hill Rehabilitation Addition - Architect Discussion)" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/65865" target="_blank">County Board Meeting Minutes -- March 2, 2015</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- February 17, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/65830" target="_blank">County Board Meeting Minutes -- February 17, 2015</a><br>
+										  <a title="County Board Meeting Minutes -- February 2, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50993" target="_blank">County Board Meeting Minutes -- February 2, 2015</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- January 20, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50986" target="_blank">County Board Meeting Minutes -- January 20, 2015</a><br>
+										  <a title="County Board Meeting Minutes -- January 5, 2015" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50985" target="_blank">County Board Meeting Minutes -- January 5, 2015</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- December 15, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50970" target="_blank">County Board Meeting Minutes -- December 15, 2014</a><br>
+										  <a title="County Board Meeting Minutes -- December 1, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50966" target="_blank">County Board Meeting Minutes -- December 1, 2014</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- November 26, 2014 (Special Meeting to approve Fiscal Year 2014-2015 budget)" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50965" target="_blank">County Board Meeting Minutes -- November 26, 2014&nbsp; (Special Meeting to approve Fiscal Year 2014-2015 Budget)</a><br>
+										  <a title="County Board Meeting Minutes -- November 17, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50961" target="_blank">County Board Meeting Minutes -- November 17, 2014</a><br>
+										  <a title="County Board Meeting Minutes -- November 3, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50954" target="_blank">County Board Meeting Minutes -- November 3, 2014</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- October 20, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50943" target="_blank">County Board Meeting Minutes -- October 20, 2014</a><br>
+										  <a title="County Board Meeting Minutes -- October 6, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50939" target="_blank">County Board Meeting Minutes -- October 6, 2014</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- September 15, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50932" target="_blank">County Board Meeting Minutes -- September 15, 2014</a><br>
+										  <a title="County Board Meeting Minutes -- September 2, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50923" target="_blank">County Board Meeting Minutes -- September 2, 2014</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50909" target="_blank">County Board Meeting Minutes -- August 18, 2014</a><br>
+										  <a title="County Board Meeting Minutes -- August 14, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50907" target="_blank">County Board Meeting Minutes -- August 4, 2014</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- July 21, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50902" target="_blank">County Board Meeting Minutes -- July 21, 2014</a><br>
+										  <a title="County Board Meeting Minutes" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50898" target="_blank">County Board Meeting Minutes -- July 7, 2014</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50895" target="_blank">County Board Meeting Minutes -- June 16, 2014</a><br>
+										  <a title="County Board Meeting Minutes -- June 2, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50892" target="_blank">County Board Meeting Minutes -- June 2, 2014</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- May 19, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50888" target="_blank">County Board Meeting Minutes -- May 19, 2014</a><br>
+										  <a title="County Board Meeting Minutes -- May 5, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50884" target="_blank">County Board Meeting Minutes -- May 5, 2014</a><br>
+										  <a title="County Board Meeting Minutes -- May 5, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50884" target="_blank"><br>
+										  County Board Meeting Minutes -- April 21, 2014</a><br>
+										  <a title="County Board Meeting Minutes -- April 21, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50870" target="_blank">County Board Meeting Minutes -- April 7, 2014</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- March 17, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50848" target="_blank">County Board Meeting Minutes -- March 17, 2014</a><br>
+										  <a title="County Board Meeting Minutes -- March 3, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/50834" target="_blank">County Board Meeting Minutes -- March 3, 2014</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- February 18, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/21371" target="_blank">County Board Meeting Minutes -- February 18, 2014</a><br>
+										  <a title="County Board Meeting Minutes -- February 3, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/21364" target="_blank">County Board Meeting Minutes -- February 3, 2014</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- January 21, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/21347" target="_blank">County Board Meeting Minutes -- January 21, 2014</a><br>
+										  <a title="County Board Meeting Minutes -- January 7, 2014" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/21340" target="_blank">County Board Meeting Minutes -- January 7, 2014</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- December 16, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/21336" target="_blank">County Board Meeting Minutes -- December 16, 2013</a><br>
+										  <a title="County Board Meeting Minutes -- December 2, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/13968" target="_blank">County Board Meeting Minutes -- December 2, 2013</a></p>
+										<p><a title="County Board Meeting Minutes -- November 27, 2013  (Special Meeting - FY 2014 Budget)" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/13967" target="_blank">County Board Meeting Minutes -- November 27, 2013&nbsp; (Special Meeting - FY 2014 Budget)</a><br>
+										  <a title="County Board Meeting Minutes -- November 18, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1366" target="_blank">County Board Meeting Minutes -- November 18, 2013</a><br>
+										  <a title="County Board Meeting Minutes -- November 4, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1361" target="_blank">County Board Meeting Minutes -- November 4, 2013</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- October 21, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1354" target="_blank">County Board Meeting Minutes -- October 21, 2013</a><br>
+										  <a title="County Board Meeting Minutes -- October 7, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1351" target="_blank">County Board Meeting Minutes -- October 7, 2013</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- September 20, 2013 (Special Meeting - Budget Hearings)" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1350" target="_blank">County Board Meeting Minutes -- September 20, 2013&nbsp; (Special Meeting - Budget Hearings)</a><br>
+										  <a title="County Board Meeting Minutes -- September 19, 2013 (Special Meeting - Budget Hearings)" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1349" target="_blank">County Board Meeting Minutes -- September 19, 2013&nbsp; (Special Meeting - Budget Hearings)</a><br>
+										  <a title="County Board Meeting Minutes -- September 16, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1347" target="_blank">County Board Meeting Minutes -- September 16, 2013</a><br>
+										  <a title="County Board Meeting Minutes -- September 3, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1342" target="_blank">County Board Meeting Minutes -- September 3, 2013</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- August 19, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1330" target="_blank">County Board Meeting Minutes -- August 19, 2013</a><br>
+										  <a title="County Board Meeting Minutes -- August 5, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1323" target="_blank">County Board Meeting Minutes -- August 5, 2013</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- July 15, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1317" target="_blank">County Board Meeting Minutes -- July 15, 2013</a><br>
+										  <a title="County Board Meeting Minutes -- July 1, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1300" target="_blank">County Board Meeting Minutes -- July 1, 2013</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- June 17, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1295" target="_blank">County Board Meeting Minutes -- June 17, 2013</a><br>
+										  <a title="County Board Meeting Minutes -- June 7, 2013  (Special Meeting)" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1291" target="_blank">County Board Meeting Minutes -- June 7, 2013&nbsp; (Special Meeting)</a><br>
+										  <a title="County Board Meeting Minutes -- June 3, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1290" target="_blank">County Board Meeting Minutes -- June 3, 2013</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- May 20, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1107" target="_blank">County Board Meeting Minutes -- May 20, 2013</a><br>
+										  <a title="County Board Meeting Minutes -- May 6, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1090" target="_blank">County Board Meeting Minutes -- May 6, 2013&nbsp;</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- April 26, 2013  (Special Meeting - Disaster Proclamation)" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1080" target="_blank">County Board Meeting Minutes -- April 26, 2013&nbsp; (Special Meeting - Disaster Proclamation)</a><br>
+										  <a title="County Board Meeting Minutes -- April 15, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1079" target="_blank">County Board Meeting Minutes -- April 15, 2013</a><br>
+										  <a title="County Board Meeting Minutes -- April 1, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1078" target="_blank">County Board Meeting Minutes -- April 1, 2013</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- March 18, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1077" target="_blank">County Board Meeting Minutes -- March 18, 2013</a><br>
+										  <a title="County Board Meeting Minutes -- March 4, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/1076" target="_blank">County Board Meeting Minutes -- March 4, 2013</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- February 19, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/898" target="_blank">County Board Meeting Minutes -- February 19, 2013</a><br>
+										  <a title="County Board Meeting Minutes -- February 4, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/899" target="_blank">County Board Meeting Minutes -- February 4, 2013</a><br>
+										  <br>
+										  <a title="County Board Meeting Minutes -- January 22, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/900" target="_blank">County Board Meeting Minutes -- January 22, 2013</a><br>
+										  <a title="County Board Meeting Minutes -- January 7, 2013" class="Hyperlink" href="http://www.monroecountyil.org/DocumentCenter/View/901" target="_blank">County Board Meeting Minutes -- January 7, 2013</a></p>
+									</div>
+								</div>
+								<div class="textSectionSpacing" style="float: left; width: 100%; height: 15px; line-height: 15px;"> <br></div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		
+		
+		<!--div class="textLayoutStylesOne">
+			<h2>Circuit Court Board Meeting Minutes</h2>
+			<div class="textFirstFloat"></div>
+		</div-->
+
+	</div>
+</body>
+</html>

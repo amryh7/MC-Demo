@@ -1,0 +1,40 @@
+'<div class="note-box"><span class="note-edit-label">Edit</span>'+
+						'<span class="note-id-label">ID: </span><span class="note-id-content">'+$request.responseJSON[0]['id']+'</span>'+
+						'<span class="note-topic-label">Topic: </span><span class="note-topic-content">'+$request.responseJSON[0]['topic']+'</span>'+
+						'<br><span class="note-date-label">Date: </span><span class="note-date-content">'+$request.responseJSON[0]['date']+
+						'<br><span class="note-projects-label">Projects: </span><span class="note-projects-content">'+$request.responseJSON[0]['projects']+'</span>'+
+						'<br><span class="note-note-label">Note: </span><span class="note-note-content">'+$request.responseJSON[0]['note']+'</span>'+
+						'</div>';
+						
+						
+						
+ function getTextBetweenTags($tag, $html, $strict=0)
+{
+    /*** a new dom object ***/
+    $dom = new domDocument;
+    /*** load the html into the object ***/
+    if($strict==1)
+    {
+        $dom->loadXML($html);
+    }
+    else
+    {
+        $dom->loadHTML($html);
+    }
+
+    /*** discard white space ***/
+    $dom->preserveWhiteSpace = false;
+
+    /*** the tag by its tag name ***/
+    $content = $dom->getElementsByTagname($tag);
+
+    /*** the array to return ***/
+    $out = array();
+    foreach ($content as $item)
+    {
+        /*** add node value to the out array ***/
+        $out[] = $item->nodeValue;
+    }
+    /*** return the results ***/
+    return $out;
+}
